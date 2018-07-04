@@ -51,6 +51,10 @@ App = {
     var tutorialTokenInstance;
 
     web3.eth.getAccounts(function(error, accounts) {
+      console.log(`accounts = ${accounts}`);
+      console.dir(accounts);
+      console.log(`accounts===null = ${accounts===null}`);
+      console.log(`typeof accounts = ${typeof accounts}`);
       if (error) {
         console.log(error);
       }
@@ -76,6 +80,10 @@ App = {
     var tutorialTokenInstance;
 
     web3.eth.getAccounts(function(error, accounts) {
+      console.log(`accounts = ${accounts}`);
+      console.dir(accounts);
+      console.log(`accounts===null = ${accounts===null}`);
+      console.log(`typeof accounts = ${typeof accounts}`);
       if (error) {
         console.log(error);
       }
@@ -84,10 +92,14 @@ App = {
 
       App.contracts.TutorialToken.deployed().then(function(instance) {
         tutorialTokenInstance = instance;
+        console.log(`tutorialTokenInstance = ${tutorialTokenInstance}`);
+        console.log(`account = ${account}`);
 
         return tutorialTokenInstance.balanceOf(account);
       }).then(function(result) {
+        console.log(`result = ${result}`);
         balance = result.c[0];
+        console.log(`balance = ${balance}`);
 
         $('#TTBalance').text(balance);
       }).catch(function(err) {
