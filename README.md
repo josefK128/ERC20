@@ -9,7 +9,7 @@ metamask
 lite-server  
   
 install:  
-(1) git clone https://github.com/josefK128/truffle-ganache-metamask.git    
+(1) git clone https://github.com/josefK128/ERC20.git    
 (2) cd into repo root    
 (3) npm install    
   
