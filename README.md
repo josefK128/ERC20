@@ -19,5 +19,5 @@ install:
 (6) launch ganache  
 (7) truffle migrate --reset  
   
-// run dApp
+// run dApp  
 (8) npm run dev
