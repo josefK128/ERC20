@@ -14,7 +14,7 @@ install:
 (3) cd into public/repo root    
 (4) npm install    
   
-// compile/test/migrate contract 
+// compile/test/migrate contract   
 (5) truffle compile  
 (6) launch ganache  
 (7) truffle migrate --reset  
